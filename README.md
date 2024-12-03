@@ -1,84 +1,102 @@
-# File Management Tool - README
+File Management Tool - README
 
 
 
----
-
-## 📄 Overview
+📄 Overview
 
 This is a file management tool designed to help users efficiently manage documents within a specified directory. The tool provides options to:
 
-- **Delete files** containing specific words.
-- **Remove text** from filenames.
-- **Replace text** within file content.
+Delete files containing specific words.
 
-It supports `.txt`, `.pdf`, and `.epub` files exclusively.
+Remove text from filenames.
 
----
+Replace text within file content.
 
-## ✨ Features
+It supports .txt, .pdf, and .epub files exclusively.
 
-1. **🗑️ Delete Documents Containing a Word:**
-   - Removes files containing a specific word in their content.
-2. **✏️ Remove Text from Filenames:**
-   - Strips specific text from the filenames of supported files.
-3. **🔄 Replace Text in Document Content:**
-   - Replaces a specified text with new content within supported files.
+✨ Features
 
----
+🗑️ Delete Documents Containing a Word:
 
-## 🛠️ Usage Instructions (English)
+Removes files containing a specific word in their content.
 
-### Prerequisites
+✏️ Remove Text from Filenames:
 
-- Ensure Python is installed on your system.
+Strips specific text from the filenames of supported files.
 
-### Running the Program
+🔄 Replace Text in Document Content:
 
-1. Execute the `.exe` file (or run the Python script if not compiled).
-2. Select your language: `en` for English, `es` for Spanish.
-3. Choose an option from the menu:
-   - `1`: Delete documents containing a specific word.
-   - `2`: Remove text from filenames.
-   - `3`: Replace text within file content.
-   - `4`: Exit the program.
-4. Follow the prompts to specify directories, words, or text as required.
+Replaces a specified text with new content within supported files.
 
-### Restrictions
+🛠️ Usage Instructions (English)
 
-- The program only processes `.txt`, `.pdf`, and `.epub` files.
-- Files outside these formats are ignored.
+Prerequisites
 
----
+Ensure Python is installed on your system.
 
-## 🛠️ Instrucciones de Uso (Español)
+Running the Program
 
-### Requisitos Previos
+Execute the .exe file (or run the Python script if not compiled).
 
-- Asegúrate de que Python esté instalado en tu sistema.
+Select your language: en for English, es for Spanish.
 
-### Ejecución del Programa
+Choose an option from the menu:
 
-1. Ejecuta el archivo `.exe` (o ejecuta el script de Python si no está compilado).
-2. Selecciona tu idioma: `en` para inglés, `es` para español.
-3. Elige una opción del menú:
-   - `1`: Eliminar documentos que contengan una palabra específica.
-   - `2`: Borrar texto de los nombres de los documentos.
-   - `3`: Reemplazar texto en el contenido de los documentos.
-   - `4`: Salir del programa.
-4. Sigue las instrucciones para especificar directorios, palabras o textos según se solicite.
+1: Delete documents containing a specific word.
 
-### Restricciones
+2: Remove text from filenames.
 
-- El programa solo procesa archivos `.txt`, `.pdf` y `.epub`.
-- Los archivos fuera de estos formatos se ignoran.
+3: Replace text within file content.
 
----
+4: Exit the program.
 
-## 📌 Notes
+Follow the prompts to specify directories, words, or text as required.
 
-- **Error Handling:** The program provides feedback for unsupported formats and any issues encountered during processing.
-- **Logo:** The program displays a logo "Brihuaa" during startup for branding.
+Restrictions
+
+The program only processes .txt, .pdf, and .epub files.
+
+Files outside these formats are ignored.
+
+🛠️ Instrucciones de Uso (Español)
+
+Requisitos Previos
+
+Asegúrate de que Python esté instalado en tu sistema.
+
+Ejecución del Programa
+
+Ejecuta el archivo .exe (o ejecuta el script de Python si no está compilado).
+
+Selecciona tu idioma: en para inglés, es para español.
+
+Elige una opción del menú:
+
+1: Eliminar documentos que contengan una palabra específica.
+
+2: Borrar texto de los nombres de los documentos.
+
+3: Reemplazar texto en el contenido de los documentos.
+
+4: Salir del programa.
+
+Sigue las instrucciones para especificar directorios, palabras o textos según se solicite.
+
+Restricciones
+
+El programa solo procesa archivos .txt, .pdf y .epub.
+
+Los archivos fuera de estos formatos se ignoran.
+
+📌 Notes
+
+Error Handling: The program provides feedback for unsupported formats and any issues encountered during processing.
+
+Logo: The program displays a logo "Brihuaa" during startup for branding.
+
+📥 Download
+
+Download the executable here
 
 For further assistance, please contact the developer.
 
