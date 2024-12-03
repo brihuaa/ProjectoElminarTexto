@@ -29,11 +29,28 @@ def rename_files_remove_text(directory, text):
                 except Exception as e:
                     print(f"Error al renombrar {old_path}: {e}")
 
+def replace_text_in_files(directory, old_text, new_text):
+    """Reemplaza texto en el contenido de todos los archivos de un directorio."""
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                if old_text in content:
+                    new_content = content.replace(old_text, new_text)
+                    with open(file_path, 'w', encoding='utf-8') as f:
+                        f.write(new_content)
+                    print(f"Reemplazado texto en: {file_path}")
+            except Exception as e:
+                print(f"Error al procesar {file_path}: {e}")
+
 def main():
     print("Gestor de Archivos")
     print("1. Eliminar documentos que contengan cierta palabra")
     print("2. Borrar texto de los nombres de los documentos")
-    print("3. Salir")
+    print("3. Reemplazar texto en el contenido de los documentos")
+    print("4. Salir")
 
     while True:
         try:
@@ -47,6 +64,11 @@ def main():
                 text = input("Ingresa el texto a eliminar de los nombres: ")
                 rename_files_remove_text(directory, text)
             elif option == 3:
+                directory = input("Ingresa la ruta del directorio: ")
+                old_text = input("Ingresa el texto a reemplazar: ")
+                new_text = input("Ingresa el nuevo texto: ")
+                replace_text_in_files(directory, old_text, new_text)
+            elif option == 4:
                 print("Saliendo del programa.")
                 break
             else:
