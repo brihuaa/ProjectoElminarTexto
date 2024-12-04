@@ -1,6 +1,5 @@
 # File Management Tool - README
 
-![Brihuaa Logo](https://via.placeholder.com/150?text=Brihuaa)
 
 ---
 
@@ -82,7 +81,7 @@ It supports `.txt`, `.pdf`, and `.epub` files exclusively.
 
 ### 📥 Download
 
-[**Download the executable here**](https://your-download-link.com)
+[**Download the executable here**](https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/main.exe)
 
 For further assistance, please contact the developer.
 
