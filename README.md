@@ -81,7 +81,7 @@ It supports `.txt`, `.pdf`, and `.epub` files exclusively.
 
 ### 📥 Download
 
-[**Download the executable here**](https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/main.exe)
+[**Download the executable here**]([https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/main.exe](https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/DocsManagement.exe))
 
 For further assistance, please contact the developer.
 
