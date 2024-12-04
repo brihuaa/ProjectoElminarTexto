@@ -24,11 +24,18 @@ def rename_files_remove_text(directory, text):
                 old_path = os.path.join(root, file)
                 new_name = file.replace(text, '')
                 new_path = os.path.join(root, new_name)
+
+                # Verifica si el archivo de destino ya existe
+                if os.path.exists(new_path):
+                    print(f"Error al renombrar {old_path}: el archivo de destino ya existe.")
+                    continue  # Pasa al siguiente archivo
+
                 print(f"Renombrando: {old_path} -> {new_path}")
                 try:
                     os.rename(old_path, new_path)
                 except Exception as e:
                     print(f"Error al renombrar {old_path}: {e}")
+
 
 def replace_text_in_files(directory, old_text, new_text):
     """Reemplaza texto en el contenido de todos los archivos de un directorio."""
@@ -49,13 +56,14 @@ def replace_text_in_files(directory, old_text, new_text):
 
 def main():
     print("""
- ▄▄▄▄▄▄▄ ▄▄▄▄▄▄   ▄▄▄ ▄▄   ▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄ ▄▄▄▄▄▄ 
-█  ▄    █   ▄  █ █   █  █ █  █  █ █  █      █      █
-█ █▄█   █  █ █ █ █   █  █▄█  █  █ █  █  ▄   █  ▄   █
-█       █   █▄▄█▄█   █       █  █▄█  █ █▄█  █ █▄█  █
-█  ▄   ██    ▄▄  █   █   ▄   █       █      █      █
-█ █▄█   █   █  █ █   █  █ █  █       █  ▄   █  ▄   █
-█▄▄▄▄▄▄▄█▄▄▄█  █▄█▄▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█▄█ █▄▄█▄█ █▄▄█
+ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄   ▄▄▄ ▄▄   ▄▄ ▄▄   ▄▄ ▄▄▄▄▄▄▄ ▄▄▄▄▄▄▄ 
+█  ▄    █   ▄  █ █   █  █ █  █  █ █  █       █       █
+█ █▄█   █  █ █ █ █   █  █▄█  █  █ █  █   ▄   █   ▄   █
+█       █   █▄▄█▄█   █       █  █▄█  █  █▄█  █  █▄█  █
+█  ▄   ██    ▄▄  █   █   ▄   █       █       █       █
+█ █▄█   █   █  █ █   █  █ █  █       █   ▄   █   ▄   █
+█▄▄▄▄▄▄▄█▄▄▄█  █▄█▄▄▄█▄▄█ █▄▄█▄▄▄▄▄▄▄█▄▄█ █▄▄█▄▄█ █▄▄█
+
     """)
 
     language = input("Choose your language / Elige tu idioma (en/es): ").strip().lower()
@@ -99,23 +107,22 @@ def main():
             }
         }
 
+    directory = input(menu["prompts"]["directory"])
+
     print(menu["title"])
     for option in menu["options"]:
         print(option)
 
     while True:
         try:
-            option = int(input("\n" + menu["prompts"]["directory"] + ": "))
+            option = int(input("\nSelect an option: "))
             if option == 1:
-                directory = input(menu["prompts"]["directory"])
                 word = input(menu["prompts"]["word"])
                 delete_files_containing_word(directory, word)
             elif option == 2:
-                directory = input(menu["prompts"]["directory"])
                 text = input(menu["prompts"]["remove_text"])
                 rename_files_remove_text(directory, text)
             elif option == 3:
-                directory = input(menu["prompts"]["directory"])
                 old_text = input(menu["prompts"]["old_text"])
                 new_text = input(menu["prompts"]["new_text"])
                 replace_text_in_files(directory, old_text, new_text)
