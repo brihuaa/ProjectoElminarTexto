@@ -1,6 +1,5 @@
 # File Management Tool - README
 
-![Brihuaa Logo](https://via.placeholder.com/150?text=Brihuaa)
 
 ---
 
