@@ -1,6 +1,5 @@
 # File Management Tool - README
 
-
 ---
 
 ## 📄 Overview
@@ -74,6 +73,14 @@ It supports `.txt`, `.pdf`, and `.epub` files exclusively.
 
 ---
 
+## 🛠️ Tecnologías
+
+<img alt="Fresh" src="https://img.shields.io/badge/Fresh-1.1.3-blue?style=flat&amp;logo=deno">
+<img alt="Deno" src="https://img.shields.io/badge/Deno-1.34.3-black?style=flat&amp;logo=deno">
+<img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-5.0.4-blue?style=flat&amp;logo=typescript">
+
+---
+
 ## 📌 Notes
 
 - **Error Handling:** The program provides feedback for unsupported formats and any issues encountered during processing.
@@ -81,7 +88,7 @@ It supports `.txt`, `.pdf`, and `.epub` files exclusively.
 
 ### 📥 Download
 
-[**Download the executable here**]([https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/main.exe](https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/DocsManagement.exe))
+[**Download the executable here**](https://github.com/brihuaa/ProjectoElminarTexto/raw/refs/heads/main/dist/DocsManagement.exe)
 
 For further assistance, please contact the developer.
 
